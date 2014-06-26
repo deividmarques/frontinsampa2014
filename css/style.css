@@ -21,6 +21,9 @@ body{
   -ms-font-smoothing: antialiased;
   font-smoothing: antialiased;
 }
+img{
+  max-width: 100%;
+}
 a{
   text-decoration: none;
 }
@@ -36,12 +39,19 @@ a{
 }
 [class*="btn"]{
   background-color: #73b123;
-  border-bottom: 2px solid #598f14;
+  box-shadow: 0px 6px 0px #598f14, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+
   border-radius: 2px;
   color: #fff;
   display: inline-block;
   margin-top: 10px;
   padding: 10px 25px;
+}
+[class*="btn"]:hover,
+[class*="btn"]:focus,
+[class*="btn"]:active{
+  box-shadow: 0px 2px 0px #598f14, 0px 1px 6px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+  border: none;
 }
 .btn-default{
   background-color: #9f9e9e;
@@ -85,6 +95,7 @@ a{
 }
 .main a{
   color: #fff;
+  text-transform: none;
 }
 
 .footer{
@@ -106,4 +117,23 @@ a{
 }
 .ico-tw{
   background-position: -36px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .logo{
+    width: 250px;
+  }
+  .title{
+    font-size: 1.25rem;
+  }
+  .header .title{
+    font-size: 2.625rem;
+  }
+  .main{
+    background: none;
+    min-height: 270px;
+  }
+  .main .content{
+    height: 260px;
+  }
 }
