@@ -40,6 +40,8 @@ a{
 [class*="btn"]{
   background-color: #73b123;
   box-shadow: 0px 6px 0px #598f14, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+  -webkit-box-shadow: 0px 6px 0px #598f14, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+  -moz-box-shadow: 0px 6px 0px #598f14, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
 
   border-radius: 2px;
   color: #fff;
@@ -51,11 +53,36 @@ a{
 [class*="btn"]:focus,
 [class*="btn"]:active{
   box-shadow: 0px 2px 0px #598f14, 0px 1px 6px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+  -webkit-box-shadow: 0px 2px 0px #598f14, 0px 1px 6px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+  -moz-box-shadow: 0px 2px 0px #598f14, 0px 1px 6px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+
   border: none;
+  -webkit-transform: translate(0, 4px);
+  -moz-transform: translate(0, 4px);
+  transform: translate(0, 4px);
+
+  -webkit-transition: all .1s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+
 }
+
 .btn-default{
   background-color: #9f9e9e;
-  border-color: #7e7c7c;
+
+  box-shadow: 0px 6px 0px #7e7c7c, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+  -webkit-box-shadow: 0px 6px 0px #7e7c7c, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+  -moz-box-shadow: 0px 6px 0px #7e7c7c, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active{
+  box-shadow: 0px 2px 0px #7e7c7c, 0px 1px 6px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+  -webkit-box-shadow: 0px 2px 0px #7e7c7c, 0px 1px 6px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+  -moz-box-shadow: 0px 2px 0px #7e7c7c, 0px 1px 6px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+
 }
 .title{
   font-weight: 300;
@@ -70,7 +97,7 @@ a{
   font-weight: 700;
 }
 .header .btn{
-  margin: 25px 0 0;
+  margin: 25px 0;
 }
 .main{
   background: url(../images/bg.jpg) no-repeat 0 0;
