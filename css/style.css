@@ -137,7 +137,7 @@ a{
 [class*="ico"]{
   background: url(../images/social.png) no-repeat 0 0;
   display: inline-block;
-  margin: 0 10px;
+  margin: 10px;
   height: 34px;
   text-indent: -99999px;
   width: 34px;
