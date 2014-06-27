@@ -147,10 +147,17 @@ a{
 .ico-tw{
   background-position: -36px 0;
 }
-.map-content iframe{
+#map{
+  height: 450px;
   margin: 30px 0;
 }
-
+.maps-frontinsampa{
+  background: url(http://frontinsampa.com.br/images/touch-icon-iphone.png) no-repeat 0 0;
+  height: 57px;
+  width: 57px;
+  position: relative;
+  top: -20px;
+}
 @media screen and (max-width: 767px) {
   .logo{
     height: 210px;
