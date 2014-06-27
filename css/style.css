@@ -26,6 +26,7 @@ img{
 }
 a{
   text-decoration: none;
+  color: #fff;
 }
 .area-top,
 .area-center,
@@ -129,6 +130,10 @@ a{
   color: #fff;
   margin-top: 50px;
   padding: 20px 0;
+}
+.area-bottom .content a{
+  display: inline-block;
+  margin-top: 25px;
 }
 .area-bottom br{display: none;}
 [class*="ico"]{
