@@ -27,9 +27,9 @@ img{
 a{
   text-decoration: none;
 }
-.header,
-.main,
-.footer{
+.area-top,
+.area-center,
+.area-bottom{
   text-align: center;
 }
 .logo{
@@ -92,21 +92,21 @@ a{
 .title strong{
   font-weight: 400;
 }
-.header .title{
+.area-top .title{
   font-size: 3.75rem;
   font-weight: 700;
 }
-.header .btn{
+.area-top .btn{
   margin: 25px 0;
 }
-.main{
+.area-center{
   background: url(../images/bg.jpg) no-repeat 0 0;
   background-size: 100%;
   margin: 30px 0;
   min-height: 430px;
   position: relative;
 }
-.main .content{
+.area-center .content{
   content: "";
   background-color: rgba(0,0,0,.8);
   color: #b0afaf;
@@ -117,18 +117,18 @@ a{
   position: absolute;
   width: 100%;
 }
-.main .title{
+.area-center .title{
   font-size: 2.25rem;
 }
-.main a{
+.area-center a{
   color: #fff;
   text-transform: none;
 }
 
-.footer{
+.area-bottom{
   position: relative;
 }
-.footer .content{
+.area-bottom .content{
   background-color: #c22f35;
   color: #fff;
   margin-top: 30px;
@@ -148,19 +148,20 @@ a{
 
 @media screen and (max-width: 767px) {
   .logo{
+    height: 210px;
     width: 250px;
   }
   .title{
     font-size: 1.25rem;
   }
-  .header .title{
-    font-size: 2.625rem;
+  .area-top .title{
+    display: none;
   }
-  .main{
+  .area-center{
     background: none;
     min-height: 270px;
   }
-  .main .content{
+  .area-center .content{
     height: 260px;
   }
 }
