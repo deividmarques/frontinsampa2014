@@ -130,6 +130,7 @@ a{
   margin-top: 50px;
   padding: 20px 0;
 }
+.area-bottom br{display: none;}
 [class*="ico"]{
   background: url(../images/social.png) no-repeat 0 0;
   display: inline-block;
@@ -166,4 +167,5 @@ a{
   .map-content iframe{
     margin: 15px 0px;
   }
+  .area-bottom br{display: block;}
 }
