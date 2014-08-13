@@ -1,0 +1,69 @@
+.animate-flasher
+  opacity: 0
+  -webkit-animation: flasher 5.15s infinite
+  animation: flasher 5.15s infinite
+  -moz-animation: flasher 5.15s infinite
+
+@-webkit-keyframes flasher
+  0%
+    opacity: 0
+  2%
+    opacity: 1
+  4%
+    opacity: 0
+  100%
+    opacity: 0
+
+@-moz-keyframes flasher
+  0%
+    opacity: 0
+  2%
+    opacity: 1
+  4%
+    opacity: 0
+  100%
+    opacity: 0
+
+@keyframes flasher
+  0%
+    opacity: 0
+  2%
+    opacity: 1
+  4%
+    opacity: 0
+  100%
+    opacity: 0
+
+.animate-swing
+  -webkit-animation: swing 2.15s infinite
+  animation: swing 2.15s infinite
+  -moz-animation: swing 2.15s infinite
+
+
+@-webkit-keyframes swing
+  0%
+    -webkit-transform: rotate(0) translate(0,0)
+  50%
+    -webkit-transform: rotate(2deg) translate(25px,-17px)
+  0%
+    -webkit-transform: rotate(0) translate(0,0)
+
+@-moz-keyframes swing
+  0%
+    -moz-transform: rotate(0) translate(0,0)
+  50%
+    -moz-transform: rotate(2deg) translate(25px,-17px)
+  100%
+    -moz-transform: rotate(0) translate(0,0)
+
+@keyframes swing
+  0%
+    transform: rotate(0) translate(0,0)
+  50%
+    transform: rotate(2deg) translate(25px,-17px)
+  100%
+    transform: rotate(0) translate(0,0)
+
+
+
+

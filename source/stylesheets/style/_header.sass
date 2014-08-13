@@ -1,0 +1,56 @@
+.area-top
+  background: url(../images/header-mobile.jpg) no-repeat 0 bottom #080808
+  background-size: 100%
+  padding-bottom: 40px
+  text-align: center
+  text-transform: uppercase
+
+  .logo
+    height: 240px
+    margin: -30px auto
+    width: 340px
+
+  .date
+    color: #fff
+    font-size: 2.4rem
+    font-weight: 700
+
+  .title
+    margin-top: 5px
+
+  .btn-send
+    margin-top: 20px
+
+  .ico-menu
+    display: block
+    position: relative
+    padding-left: 1.25em
+    text-indent: -99999px
+
+    &:before
+      content: ""
+      position: absolute
+      left: -1rem
+      top: 1.5rem
+      width: 3rem
+      height: 4px
+      background: #fff
+      box-shadow: 0 1.8rem 0 0 #fff, 0 .9rem 0 0 #fff
+
+
+@media screen and (max-width : 320px)
+
+  .area-top
+
+    .logo
+      height: 230px
+      position: relative
+      width: 320px
+
+
+@media screen and (min-width: 401px)
+
+  .area-top
+
+    .ico-menu
+      display: none

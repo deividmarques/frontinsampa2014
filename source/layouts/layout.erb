@@ -10,6 +10,7 @@
 
     <meta name="description" content="FrontInSampa 2014 - Evento focado em Desenvolvimento Front-end em São Paulo, dia 25 de Outubro de 2014." />
     <meta name="keywords" content="Desenvolvedor Frontend, Desenvolvedor Front-end, Frontend em São Paulo, Eventos de frontend em São Paulo, FrontInSampa, FrontInSampa 2014" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
     <meta property="og:type" content="website"/>
     <meta property="og:locale" content="pt-br" />
@@ -32,14 +33,11 @@
 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Oswald:400,300,700' rel='stylesheet' type='text/css'>
 
-    <%= stylesheet_link_tag "normalize", "all" %>
+    <%= stylesheet_link_tag "all" %>
     <%= javascript_include_tag  "all" %>
   </head>
 
   <body class="<%= page_classes %>">
-
-    <%= partial 'partials/_header' %>
-
     <%= yield %>
   </body>
 </html>

@@ -1,1 +1,59 @@
+html
+  font-size: 62.5%
+  font-family: 'Open Sans', sans-serif
+
+body
+  -webkit-overflow-scrolling: touch
+  -moz-overflow-scrolling: touch
+  -ms-overflow-scrolling: touch
+  overflow-scrolling: touch
+  -webkit-font-smoothing: antialiased
+  -moz-font-smoothing: antialiased
+  -ms-font-smoothing: antialiased
+  font-smoothing: antialiased
+
+
+.container
+  padding: 0 2rem
+
+[class*="btn"]
+  color: #fff
+  display: inline-block
+  font-family: 'Oswald', sans-serif
+  padding: 10px 30px
+  text-decoration: none
+  text-transform: uppercase
+
+  &.btn-send
+    +box-shadow(0px 0px 0px 3px rgba(76,114,27,.7))
+    background: #649624
+    font-size: 2rem
+
+.title
+  color: #fceea3
+  font-family: 'Oswald', sans-serif
+  font-weight: 300
+  font-size: 3.5rem
+  text-shadow: 0 0 30px #ff2424
+
+.clearfix
+  &:before,
+  &:after
+    content: " "
+    display: table
+
+  &:after
+    clear: both
+
+.sr-only
+  position: absolute
+  width: 1px
+  height: 1px
+  margin: -1px
+  padding: 0
+  overflow: hidden
+  clip: rect(0, 0, 0, 0)
+
+
+@media screen and (min-width: 401px)
 
