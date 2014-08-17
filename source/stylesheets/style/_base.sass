@@ -3,6 +3,7 @@ html
   font-family: 'Open Sans', sans-serif
 
 body
+  color: #fff
   -webkit-overflow-scrolling: touch
   -moz-overflow-scrolling: touch
   -ms-overflow-scrolling: touch
@@ -12,9 +13,16 @@ body
   -ms-font-smoothing: antialiased
   font-smoothing: antialiased
 
+p
+  margin-bottom: 10px
+
+a
+  color: #fff
+  text-decoration: none
 
 .container
   padding: 0 2rem
+  text-align: center
 
 [class*="btn"]
   color: #fff
@@ -35,6 +43,7 @@ body
   font-weight: 300
   font-size: 3.5rem
   text-shadow: 0 0 30px #ff2424
+  text-transform: uppercase
 
 .clearfix
   &:before,
@@ -70,6 +79,34 @@ body
       display: block
   p
     font-size: 1.6rem
+
+.area-speakers
+  background: #1e1e1e
+  padding: 50px 0
+
+  .list-speakers
+
+    li
+      color: #cdcdcd
+      margin: 15px 0
+      overflow: hidden
+      text-align: left
+
+    figure
+
+      img
+        border-radius: 50%
+        border: 5px solid #ba272c
+        // Test to validation
+        float: left
+        margin-right: 15px
+        width: 75px
+
+      figcaption
+        color: #fff
+        font-size: 1.6rem
+        font-weight: 700
+        text-transform: uppercase
 
 @media screen and (min-width: 401px)
 
