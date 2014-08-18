@@ -1,4 +1,4 @@
-<section class="area-speakers">
+<!-- <section class="area-speakers">
   <div class="container">
     <h2 class="title">Palestrantes</h2>
     <ul class="list-speakers">
@@ -15,5 +15,44 @@
     </ul>
     <h2 class="title">Programação</h2>
   </div>
-</section>
+</section> -->
 
+
+<section class="area-timeline">
+  <div class="container">
+    <h2 class="title">Palestras</h2>
+    <ul class="list-timeline">
+      <li>
+        <h3 class="talk-time">8:00 - 9:00</h3>
+        <p>Credenciamento</p>
+      </li>
+      <%- 5.times do |num| %>
+      <li>
+        <a href="">
+          <div class="box-spearker">
+            <img src="<%= base_url %>/<%= images_dir %>/speaker.jpg" alt="Speaker demo">
+
+          </div>
+          <h3 class="talk-time">15:00 - 17:30</h3>
+          <h4 class="sub-title">Nome da Palestra</h4>
+          <p class="hide-mobile">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quisquam corrupti, iste eaque repellendus maxime velit error voluptate officia maiores harum distinctio unde beatae cupiditate dolorum inventore, accusantium consectetur eveniet?</p>
+        </a>
+      </li>
+      <% end %>
+      <li class="active">
+        <a href="">
+          <div class="box-spearker">
+            <img src="<%= base_url %>/<%= images_dir %>/speaker.jpg" alt="Speaker demo">
+          </div>
+          <h3 class="talk-time">15:00 - 17:30</h3>
+          <h4 class="sub-title">Nome da Palestra</h4>
+          <p class="hide-mobile">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quisquam corrupti, iste eaque repellendus maxime velit error voluptate officia maiores harum distinctio unde beatae cupiditate dolorum inventore, accusantium consectetur eveniet?</p>
+        </a>
+      </li>
+      <li>
+        <h3 class="talk-time">18:00 - 20:00</h3>
+        <p>Happy Hour com open bar</p>
+      </li>
+    </ul>
+  </div>
+</section>
