@@ -69,6 +69,23 @@ a
   overflow: hidden
   clip: rect(0, 0, 0, 0)
 
+.area-main
+  -moz-transition: -moz-transform 0.5s
+  -webkit-transition: -webkit-transform 0.5s
+  transition: transform 0.5s
+  -moz-transform: translate(0, 0)
+  -ms-transform: translate(0, 0)
+  -webkit-transform: translate(0, 0)
+  transform: translate(0, 0)
+  min-height: 100%
+  margin-left: 0
+  z-index: 10
+  position: relative
+  -webkit-overflow-scrolling: touch
+  -moz-overflow-scrolling: touch
+  -ms-overflow-scrolling: touch
+  overflow-scrolling: touch
+
 
 .area-info
   background: #c8282e
@@ -151,6 +168,7 @@ a
 
 
 .area-sponsor
+  background: #fff
   padding: 50px 0
 
   .title-sponsor
@@ -210,6 +228,7 @@ a
 
 
 @media screen and (min-width: 768px)
+
 
   .btn-dark
     font-size: 3.1rem
