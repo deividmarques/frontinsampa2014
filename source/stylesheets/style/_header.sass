@@ -3,14 +3,9 @@
   background-size: 100%
   padding-bottom: 40px
   text-align: center
+  height: 430px
+  padding-top: 200px
   text-transform: uppercase
-
-  .logo
-    height: 240px
-    margin: -30px auto
-    width: 340px
-    position: relative
-    z-index: 1
 
   .date
     color: #fff
@@ -20,8 +15,31 @@
   .title
     margin-top: 5px
 
+
+.area-fixed
+  +single-transition(all, .5s)
+  +translate(0, 0)
+  position: absolute
+  z-index: 12
+  width: 100%
+
+  .menu-visible &
+    +single-transition(all, .5s)
+    +translate(280px, 0)
+
+  .logo
+    height: 240px
+    margin: -80px auto
+    width: 305px
+    position: relative
+    z-index: 1
+
   .btn-send
-    margin-top: 20px
+    position: absolute
+    top: 250px
+    left: 50%
+    top: 330px
+    margin-left: -90px
 
   .ico-menu
     display: block
@@ -43,15 +61,21 @@
       box-shadow: 0 1.8rem 0 0 #fff, 0 .9rem 0 0 #fff
       font-size: 24px
 
+    // &:after
+    //   content: ""
+    //   height: 100%
+    //   position: absolute
+    //   top: 0
+    //   left: 0
+    //   width: 100%
+
 
 @media screen and (max-width : 320px)
 
-  .area-top
-
-    .logo
-      height: 230px
-      position: relative
-      width: 320px
+  .logo
+    height: 230px
+    position: relative
+    width: 320px
 
 
 @media screen and (min-width: 992px)
@@ -61,19 +85,7 @@
     background-size: 100%
     min-height: 460px
     position: relative
-
-    .ico-menu
-      display: none
-
-    .logo
-      float: left
-
-    .btn-send
-      margin: 0
-      position: absolute
-      top: 70px
-      right: 40px
-      padding: 10px 30px
+    padding-top: 0
 
     &:before
       content: ""
@@ -115,6 +127,46 @@
 
         &:after
           right: -65px
+
+
+  .area-fixed
+    position: fixed
+    z-index: 11
+    width: 100%
+
+    .menu-fixed &
+      height: 90px
+      background: rgba(0,0,0,.8)
+
+    .logo
+      +single-transition(all, .5s)
+      float: left
+      margin-top: -30px
+
+      .menu-fixed &
+        +single-transition(all, .5s)
+        top: -45px
+        width: 175px
+        left: 15px
+
+    .btn-send
+      +single-transition(all, .5s)
+      margin: 0
+      position: absolute
+      top: 70px
+      right: 40px
+      left: auto
+      padding: 10px 30px
+
+      .menu-fixed &
+        top: 20px
+
+    .ico-menu
+      display: none
+
+
+
+
 
 
 

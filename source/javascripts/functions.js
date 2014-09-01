@@ -6,11 +6,23 @@ project.functions = (function() {
 
   function init() {
     menuToggle();
+    menuFixed();
   }
 
   function menuToggle() {
     $('.ico-menu').on('click', function(){
       $('body').toggleClass('menu-visible');
+    });
+  }
+
+  function menuFixed(){
+    $(window).scroll(function(){
+      var $body = $('body');
+      if($(this).scrollTop() > 20){
+        $body.addClass('menu-fixed');
+      } else{
+        $body.removeClass('menu-fixed');
+      }
     });
   }
 

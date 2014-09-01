@@ -1,11 +1,8 @@
 .area-menu
+  +translate(-50%, 0)
   -moz-transition: -moz-transform 0.5s
   -webkit-transition: -webkit-transform 0.5s
   transition: transform 0.5s
-  -moz-transform: translate(-50%, 0)
-  -ms-transform: translate(-50%, 0)
-  -webkit-transform: translate(-50%, 0)
-  transform: translate(-50%, 0)
   background: #222222
   width: 280px
   position: fixed
@@ -34,34 +31,21 @@
 .menu-visible
 
   .area-main
-    -moz-transform: translate(280px, 0)
-    -ms-transform: translate(280px, 0)
-    -webkit-transform: translate(280px, 0)
-    transform: translate(280px, 0)
+    +translate(280px, 0)
 
   .area-menu
     z-index: 1
-    -moz-transform: translate(0, 0)
-    -ms-transform: translate(0, 0)
-    -webkit-transform: translate(0, 0)
-    transform: translate(0, 0)
+    +translate(0, 0)
     -webkit-overflow-scrolling: touch
     -moz-overflow-scrolling: touch
     -ms-overflow-scrolling: touch
     overflow-scrolling: touch
 
-  .ico-menu:after
-    content: ""
-    height: 100%
-    position: absolute
-    top: 0
-    left: 0
-    width: 100%
-
 
 @media screen and (min-width: 992px)
 
   .area-menu
+    +single-transition(all, .5s)
     -moz-transform: translate(0, 0)
     -ms-transform: translate(0, 0)
     -webkit-transform: translate(0, 0)
@@ -72,9 +56,13 @@
     position: absolute
     left: 35%
     top: 60px
-    z-index: 11
+    z-index: 12
     height: auto
     width: auto
+
+    .menu-fixed &
+      position: fixed
+      top: 10px
 
     li
       display: inline-block
