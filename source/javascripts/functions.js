@@ -7,6 +7,7 @@ project.functions = (function() {
   function init() {
     menuToggle();
     menuFixed();
+    isMobile();
   }
 
   function menuToggle() {
@@ -24,6 +25,19 @@ project.functions = (function() {
         $body.removeClass('menu-fixed');
       }
     });
+  }
+
+  function timelineToggle() {
+    $('.list-timeline a').on('click', function(e){
+      e.preventDefault();
+
+    });
+  }
+
+  function isMobile(){
+    if($.device.mobile || $.device.tablet === true){
+      timelineToggle();
+    }
   }
 
   return {
