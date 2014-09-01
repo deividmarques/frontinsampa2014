@@ -33,11 +33,12 @@
 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Oswald:400,300,700' rel='stylesheet' type='text/css'>
 
-    <%= javascript_include_tag  "all" %>
+    <%= stylesheet_link_tag "all" %>
   </head>
 
   <body class="<%= page_classes %>">
     <%= yield %>
+    <script src="http://zeptojs.com/zepto.min.js"></script>
+    <%= javascript_include_tag  "all" %>
   </body>
-  <%= stylesheet_link_tag "all" %>
 </html>
