@@ -87,7 +87,8 @@ a
   overflow-scrolling: touch
 
 
-.area-info
+#area-info,
+#area-description
   background: #c8282e
   color: #fff
   padding: 50px 0
@@ -102,6 +103,10 @@ a
       display: block
   p
     font-size: 1.6rem
+
+  .sub-title
+    font-weight: 700
+    font-size: 2rem
 
 .area-speakers
   background: #1e1e1e
@@ -131,12 +136,8 @@ a
         font-weight: 700
         text-transform: uppercase
 
-.area-info
-  .sub-title
-    font-weight: 700
-    font-size: 2rem
 
-.area-local
+#area-local
   background: url(../images/bg-sampa-xs.jpg) no-repeat 0 0
   background-size: 100%
   padding: 55px 0
@@ -167,7 +168,7 @@ a
   margin: 10px 0
 
 
-.area-sponsor
+#area-sponsor
   background: #fff
   padding: 50px 0
 
@@ -183,7 +184,7 @@ a
     font-weight: 400
     margin-bottom: 15px
 
-.area-contact
+#area-contact
   background: #1e1e1e
   padding: 30px 0
 
@@ -197,7 +198,7 @@ a
     margin: 20px 0
 
 
-.area-footer
+#area-footer
   background: #2c2c2b
   padding: 30px 0
   font-size: 1.1rem
@@ -210,7 +211,7 @@ a
   .hide-mobile
     display: block
 
-  .area-local
+  #area-local
     background: url(../images/bg-sampa-md.jpg) no-repeat 0 0
 
     p
@@ -237,10 +238,18 @@ a
 
 
 
-@media screen and (min-width: 1201px)
+@media screen and (min-width: 992px)
 
-  .area-local
+  #area-local
     background: url(../images/bg-sampa-lg.jpg) no-repeat 0 0
+
+
+  #area-info,
+  #area-description
+
+    .title-info span
+      display: inline-block
+      margin-left: 7px
 
 
 
