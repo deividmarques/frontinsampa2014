@@ -3,7 +3,7 @@
   background-size: 100%
   padding-bottom: 40px
   text-align: center
-  height: 430px
+  min-height: 380px
   padding-top: 200px
   text-transform: uppercase
 
@@ -30,7 +30,7 @@
 
   .logo
     height: 240px
-    margin: -80px auto
+    margin: -10px auto
     width: 305px
     position: relative
     z-index: 1
@@ -42,33 +42,27 @@
     top: 330px
     margin-left: -90px
 
-  .ico-menu
-    display: block
-    padding-left: 1.25em
-    text-indent: -99999px
-    height: 50px
-    width: 50px
-    position: relative
-    z-index: 2
+.ico-menu
+  display: block
+  padding-left: 1.25em
+  text-indent: -99999px
+  height: 50px
+  width: 50px
+  position: fixed
+  top: 15px
+  left: 15px
+  z-index: 11
 
-    &:before
-      content: ""
-      position: absolute
-      left: 5%
-      top: 1.5rem
-      width: 3rem
-      height: 0.16em
-      background: #fff
-      box-shadow: 0 1.8rem 0 0 #fff, 0 .9rem 0 0 #fff
-      font-size: 24px
-
-    // &:after
-    //   content: ""
-    //   height: 100%
-    //   position: absolute
-    //   top: 0
-    //   left: 0
-    //   width: 100%
+  &:before
+    content: ""
+    position: absolute
+    left: 5%
+    top: 1.5rem
+    width: 3rem
+    height: 0.16em
+    background: #fff
+    box-shadow: 0 1.8rem 0 0 #fff, 0 .9rem 0 0 #fff
+    font-size: 24px
 
 
 @media screen and (max-width : 320px)
@@ -84,7 +78,6 @@
   .area-top
     background: url(../images/header-md.jpg) no-repeat 0 bottom #080808
     background-size: 100%
-    min-height: 460px
     position: relative
     padding-top: 0
 
@@ -162,8 +155,8 @@
       .menu-fixed &
         top: 20px
 
-    .ico-menu
-      display: none
+  .ico-menu
+    display: none
 
 
 
