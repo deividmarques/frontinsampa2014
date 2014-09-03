@@ -1,6 +1,17 @@
 #area-timeline
-  background: #1e1e1e
-  padding: 50px 0
+  background: url(../images/bg-fire-top.jpg) repeat-x #181818
+  padding: 80px 0 120px
+  position: relative
+
+  &:after
+    content: ""
+    background: url(../images/bg-fire-bottom.jpg) repeat-x
+    height: 83px
+    width: 100%
+    position: absolute
+    bottom: 0
+    left: 0
+
 
 
   .list-timeline
@@ -76,9 +87,6 @@
 
 
   #area-timeline
-    background: #000
-    padding: 50px 0
-
 
     .list-timeline
       position: relative
