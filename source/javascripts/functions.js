@@ -27,13 +27,6 @@ project.functions = (function() {
     });
   }
 
-  function timelineToggle() {
-    $('.list-timeline a').on('click', function(e){
-      e.preventDefault();
-      //insert show description of speakers
-    });
-  }
-
   function menuMobile(){
     $('.area-menu a').on('click', function(e){
       $('body').toggleClass('menu-visible');
@@ -42,7 +35,6 @@ project.functions = (function() {
 
   function isMobile(){
     if($.device.mobile || $.device.tablet === true){
-      timelineToggle();
       menuMobile();
     }
   }
