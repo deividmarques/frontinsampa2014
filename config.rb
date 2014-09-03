@@ -60,7 +60,6 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
-# Build-specific configuration
 
 activate :deploy do |deploy|
   deploy.method = :git
@@ -71,12 +70,14 @@ activate :deploy do |deploy|
   # deploy.commit_message = 'custom-message'      # commit message (can be empty), default: Automated commit at `timestamp` by middleman-deploy `version`
 end
 
+# Build-specific configuration
+
 configure :build do
   # For example, change the Compass output style for deployment
   activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
 
   # Enable cache buster
   # activate :asset_hash
