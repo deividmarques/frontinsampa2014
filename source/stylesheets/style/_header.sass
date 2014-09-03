@@ -3,7 +3,7 @@
   background-size: 100%
   padding-bottom: 40px
   text-align: center
-  min-height: 380px
+  min-height: 420px
   padding-top: 200px
   text-transform: uppercase
 
@@ -43,15 +43,21 @@
     margin-left: -90px
 
 .ico-menu
+  +single-transition(all, .5s)
+  +translate(0, 0)
   display: block
   padding-left: 1.25em
   text-indent: -99999px
   height: 50px
   width: 50px
   position: fixed
-  top: 15px
-  left: 15px
-  z-index: 11
+  top: 10px
+  left: 8px
+  z-index: 21
+
+  .menu-visible &
+    +single-transition(all, .5s)
+    +translate(280px, 0)
 
   &:before
     content: ""
