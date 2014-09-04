@@ -8,6 +8,7 @@ project.functions = (function() {
     menuToggle();
     menuFixed();
     start();
+    delayStart();
     isMobile();
   }
 
@@ -44,6 +45,12 @@ project.functions = (function() {
     $('.area-intro').on('click',function(){
       $('body').addClass('menu-fixed');
     })
+  }
+
+  function delayStart(){
+    setTimeout(function(){
+      $('body').addClass('menu-fixed');
+    }, 1500);
   }
 
   return {
