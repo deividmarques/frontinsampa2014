@@ -1,0 +1,43 @@
+.area-intro
+  +single-transition(all, .5s)
+  +simple-transform(5, 45deg)
+  // background: #fff
+  position: fixed
+  height: 100%
+  width: 100%
+  left: 0
+  z-index: 12
+
+  .menu-fixed &
+    +single-transition(all, .5s)
+    pointer-events: none
+
+    .menu-fixed.intro-hide &
+      z-index: 1
+
+  &:before,
+  &:after
+    content: ""
+    background: #fff
+    position: absolute
+    top: 0
+    height: 100%
+    width: 51%
+    z-index: 12
+
+  &:before
+    +single-transition(all, .5s)
+    left: 0
+
+    .menu-fixed &
+      +single-transition(all, .5s)
+      +translate(-100%, 0)
+
+  &:after
+    +single-transition(all, .5s)
+    right: 0
+
+    .menu-fixed &
+      +single-transition(all, .5s)
+      +translate(100%, 0)
+

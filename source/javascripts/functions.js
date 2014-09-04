@@ -19,10 +19,15 @@ project.functions = (function() {
   function menuFixed(){
     $(window).scroll(function(){
       var $body = $('body');
-      if($(this).scrollTop() > 20){
+      if($(this).scrollTop() > 5){
         $body.addClass('menu-fixed');
       } else{
         $body.removeClass('menu-fixed');
+      }
+      if($(this).scrollTop() > 20){
+        $body.addClass('intro-hide');
+      } else{
+        $body.removeClass('intro-hide');
       }
     });
   }
