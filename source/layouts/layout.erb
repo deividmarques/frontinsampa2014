@@ -1,14 +1,12 @@
 <!doctype html>
-<html lang="pt-br" class="">
+<html lang="pt-br" itemscope itemtype="http://schema.org/Event">
   <head>
     <meta charset="utf-8">
-
-    <!-- Always force latest IE rendering engine or request Chrome Frame -->
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 
-    <title><%= current_page.data.title %></title>
+    <title itemprop="name"><%= current_page.data.title %></title>
 
-    <meta name="description" content="FrontInSampa 2014 - Evento focado em Desenvolvimento Front-end em São Paulo, dia 25 de Outubro de 2014." />
+    <meta name="description" itemprop="description" content="FrontInSampa 2014 - Evento focado em Desenvolvimento Front-end em São Paulo, dia 25 de Outubro de 2014." />
     <meta name="keywords" content="Desenvolvedor Frontend, Desenvolvedor Front-end, Frontend em São Paulo, Eventos de frontend em São Paulo, FrontInSampa, FrontInSampa 2014" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -23,13 +21,17 @@
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta itemprop="startDate" content="2014-10-25" />
+    <meta itemprop="endDate" content="2014-10-26" />
+
     <link rel="canonical" href="www.frontinsampa.com.br" />
 
     <link rel="shortcut icon" href="<%= base_url %>images/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" href="<%= base_url %>images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="<%= base_url %>images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="<%= base_url %>images/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="<%= base_url %>images/apple-touch-icon-144x144.png">
 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Oswald:400,300,700' rel='stylesheet' type='text/css'>
 
