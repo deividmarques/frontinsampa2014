@@ -17,30 +17,41 @@
     padding-top: 0
 
 
-.area-fixed
+// .area-fixed
+//   +single-transition(all, .5s)
+//   +translate(0, 0)
+//   position: absolute
+//   z-index: 12
+//   width: 100%
+
+.btn-send
   +single-transition(all, .5s)
   +translate(0, 0)
   position: absolute
+  top: 250px
+  left: 50%
+  top: 330px
+  margin-left: -90px
   z-index: 12
-  width: 100%
 
   .menu-visible &
     +single-transition(all, .5s)
     +translate(280px, 0)
 
-  .btn-send
-    position: absolute
-    top: 250px
-    left: 50%
-    top: 330px
-    margin-left: -90px
-
 .logo
+  +single-transition(all, .5s)
+  +translate(0, 0)
   height: 240px
-  margin: -10px auto
   width: 305px
-  position: relative
-  z-index: 1
+  left: 50%
+  margin-left: -153px
+  position: absolute
+  top: 0
+  z-index: 12
+
+  .menu-visible &
+    +single-transition(all, .5s)
+    +translate(280px, 0)
 
 .ico-menu
   +single-transition(all, .5s)
@@ -140,39 +151,39 @@
       background: rgba(0,0,0,.8)
 
 
-    .btn-send
-      +single-transition(all, .5s)
-      margin: 0
-      position: absolute
-      top: 70px
-      right: 40px
-      left: auto
-      padding: 10px 30px
+  .btn-send
+    +single-transition(all, .5s)
+    margin: 0
+    position: fixed
+    top: 70px
+    right: 40px
+    left: auto
+    padding: 10px 30px
 
-      .menu-fixed &
-        top: 20px
+    .menu-fixed &
+      top: 20px
 
   .ico-menu
     display: none
 
   .logo
-    +single-transition(all, .5s)
+    +single-transition(all, .7s)
     height: 90%
     left: 50%
     margin-left: -25%
     position: absolute
     top: -30px
     width: 50%
-    z-index: 12
+    z-index: 15
 
     .menu-fixed &
-      +single-transition(all, .5s)
+      +single-transition(all, .7s)
       height: 240px
       left: 5%
       margin-left: 0
       position: fixed
       width: 175px
-      top: -65px
+      top: -75px
 
 
 

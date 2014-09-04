@@ -24,11 +24,6 @@ project.functions = (function() {
       } else{
         $body.removeClass('menu-fixed');
       }
-      if($(this).scrollTop() > 20){
-        $body.addClass('intro-hide');
-      } else{
-        $body.removeClass('intro-hide');
-      }
     });
   }
 
