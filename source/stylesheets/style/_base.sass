@@ -70,13 +70,9 @@ a
   clip: rect(0, 0, 0, 0)
 
 .area-main
-  -moz-transition: -moz-transform 0.5s
-  -webkit-transition: -webkit-transform 0.5s
-  transition: transform 0.5s
-  -moz-transform: translate(0, 0)
-  -ms-transform: translate(0, 0)
-  -webkit-transform: translate(0, 0)
-  transform: translate(0, 0)
+  +single-transition(transform, .5s)
+  +translate(0, 0)
+  background: #fff
   min-height: 100%
   margin-left: 0
   z-index: 10
@@ -134,6 +130,9 @@ a
 .hide-mobile
   display: none
 
+.show-mobile
+  display: block
+
 
 .btn-dark
   background: rgba(28,28,28,.8)
@@ -152,7 +151,11 @@ a
     font-size: 3.1rem
     font-weight: 300
     margin-bottom: 20px
-    padding-top: 50px
+    padding-top: 30px
+
+    &:first-child
+      padding-top: 0
+
 
   .sub-title
     color: rgb(28,28,28)
@@ -233,6 +236,10 @@ a
 
   .title
     padding-top: 40px
+
+  #area-sponsor .title-sponsor
+    padding-top: 50px
+
 
 
 

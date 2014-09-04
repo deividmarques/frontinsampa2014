@@ -29,7 +29,7 @@
 
   .menu-visible &
     +single-transition(all, .5s)
-    +translate(280px, 0)
+    +translate(250px, 0)
 
 .logo
   +single-transition(all, .5s)
@@ -44,7 +44,7 @@
 
   .menu-visible &
     +single-transition(all, .5s)
-    +translate(280px, 0)
+    +translate(250px, 0)
 
 .ico-menu
   +single-transition(all, .5s)
@@ -61,7 +61,7 @@
 
   .menu-visible &
     +single-transition(all, .5s)
-    +translate(280px, 0)
+    +translate(250px, 0)
 
   &:before
     content: ""
@@ -74,13 +74,6 @@
     box-shadow: 0 1.8rem 0 0 #ccc, 0 .9rem 0 0 #ccc
     font-size: 24px
 
-
-@media screen and (max-width : 320px)
-
-  .logo
-    height: 230px
-    position: relative
-    width: 320px
 
 
 @media screen and (min-width: 992px)
@@ -165,6 +158,7 @@
     left: 50%
     margin-left: -25%
     position: absolute
+    pointer-events: none
     top: -30px
     width: 50%
     z-index: 15
@@ -179,14 +173,8 @@
       top: -75px
 
 
-
 @media screen and (min-width: 1500px)
 
   .area-menu li a
     font-size: 2.4rem
-
-
-
-
-
 
