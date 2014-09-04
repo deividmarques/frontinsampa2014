@@ -1,3 +1,4 @@
+
 .animate-flasher
   opacity: 0
   -webkit-animation: flasher 5.15s infinite
@@ -34,35 +35,6 @@
   100%
     opacity: 0
 
-// .animate-swing
-//   -webkit-animation: swing 2.15s infinite
-//   animation: swing 2.15s infinite
-//   -moz-animation: swing 2.15s infinite
-
-
-// @-webkit-keyframes swing
-//   0%
-//     -webkit-transform: rotate(0) translate(0,0)
-//   50%
-//     -webkit-transform: rotate(2deg) translate(25px,-17px)
-//   0%
-//     -webkit-transform: rotate(0) translate(0,0)
-
-// @-moz-keyframes swing
-//   0%
-//     -moz-transform: rotate(0) translate(0,0)
-//   50%
-//     -moz-transform: rotate(2deg) translate(25px,-17px)
-//   100%
-//     -moz-transform: rotate(0) translate(0,0)
-
-// @keyframes swing
-//   0%
-//     transform: rotate(0) translate(0,0)
-//   50%
-//     transform: rotate(2deg) translate(25px,-17px)
-//   100%
-//     transform: rotate(0) translate(0,0)
 
 .animate-swing
   +animation(swing 2.15s infinite)
@@ -81,72 +53,75 @@
     +translate(0, 0)
 
 
-.animate-scale
-  +animation(scale 1s ease-in-out)
-  +apply-origin(45%, 45%)
-
-+keyframes(scale)
-  from
-    +scale(.1)
-  to
-    +scale(1)
+@media screen and (min-width: 992px)
 
 
-.animate-left
-  +animation(posLeft 1s ease-in-out)
+  .animate-scale
+    +animation(scale 1s ease-in-out)
+    +apply-origin(45%, 45%)
 
-.animate-left-2
-  +animation(posLeft .7s ease-in-out)
-
-+keyframes(posLeft)
-  from
-    +translate(-1000%, 0)
-  to
-    +translate(0, 0)
+  +keyframes(scale)
+    from
+      +scale(.1)
+    to
+      +scale(1)
 
 
-.animate-right
-  +animation(posRight .7s ease-in-out)
+  .animate-left
+    +animation(posLeft 1s ease-in-out)
 
-.animate-right-2
-  +animation(posRight 1s ease-in-out)
+  .animate-left-2
+    +animation(posLeft .7s ease-in-out)
 
-+keyframes(posRight)
-  from
-    +translate(1500%, 0)
-  to
-    +translate(0, 0)
+  +keyframes(posLeft)
+    from
+      +translate(-1000%, 0)
+    to
+      +translate(0, 0)
 
 
-.animate-bottom
-  +animation(posBottom .35s ease-in-out)
+  .animate-right
+    +animation(posRight .7s ease-in-out)
 
-.animate-bottom-2
-  +animation(posBottom .45s ease-in-out)
+  .animate-right-2
+    +animation(posRight 1s ease-in-out)
 
-.animate-bottom-3
-  +animation(posBottom .55s ease-in-out)
+  +keyframes(posRight)
+    from
+      +translate(1500%, 0)
+    to
+      +translate(0, 0)
 
-.animate-bottom-4
-  +animation(posBottom .65s ease-in-out)
 
-.animate-bottom-5
-  +animation(posBottom .75s ease-in-out)
+  .animate-bottom
+    +animation(posBottom .35s ease-in-out)
 
-.animate-bottom-6
-  +animation(posBottom .85s ease-in-out)
+  .animate-bottom-2
+    +animation(posBottom .45s ease-in-out)
 
-.animate-bottom-7
-  +animation(posBottom .95s ease-in-out)
+  .animate-bottom-3
+    +animation(posBottom .55s ease-in-out)
 
-.animate-bottom-8
-  +animation(posBottom 1.05s ease-in-out)
+  .animate-bottom-4
+    +animation(posBottom .65s ease-in-out)
 
-.animate-bottom-9
-  +animation(posBottom 1.15s ease-in-out)
+  .animate-bottom-5
+    +animation(posBottom .75s ease-in-out)
 
-+keyframes(posBottom)
-  from
-    +translate(25px,122px)
-  to
-    +translate(0, 0)
+  .animate-bottom-6
+    +animation(posBottom .85s ease-in-out)
+
+  .animate-bottom-7
+    +animation(posBottom .95s ease-in-out)
+
+  .animate-bottom-8
+    +animation(posBottom 1.05s ease-in-out)
+
+  .animate-bottom-9
+    +animation(posBottom 1.15s ease-in-out)
+
+  +keyframes(posBottom)
+    from
+      +translate(25px,122px)
+    to
+      +translate(0, 0)
