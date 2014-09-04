@@ -7,6 +7,7 @@ project.functions = (function() {
   function init() {
     menuToggle();
     menuFixed();
+    start();
     isMobile();
   }
 
@@ -19,7 +20,7 @@ project.functions = (function() {
   function menuFixed(){
     $(window).scroll(function(){
       var $body = $('body');
-      if($(this).scrollTop() > 5){
+      if($(this).scrollTop() > 1){
         $body.addClass('menu-fixed');
       } else{
         $body.removeClass('menu-fixed');
@@ -37,6 +38,12 @@ project.functions = (function() {
     if($.device.mobile || $.device.tablet === true){
       menuMobile();
     }
+  }
+
+  function start(){
+    $('.area-intro').on('click',function(){
+      $('body').addClass('menu-fixed');
+    })
   }
 
   return {
