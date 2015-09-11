@@ -4,27 +4,31 @@
   padding-bottom: 40px
   text-align: center
   min-height: 420px
-  padding-top: 200px
+  padding-top: 160px
   text-transform: uppercase
 
-  .date
-    color: #fff
-    font-size: 2.4rem
-    font-weight: 700
-
   .title
-    margin-top: 5px
+    font-size: 3.625rem
+    font-weight: 400
     padding-top: 0
+    margin-bottom: 0
+
+
+  .subtitle
+    font-size: 2rem
+    font-weight: 300
+
+  .info
+    font-size: 1.25rem
 
 
 .btn-send
-  +single-transition(all, .5s)
+  +single-transition(all, .25s, ease-in)
   +translate(0, 0)
   position: absolute
-  top: 250px
+  top: 300px
   left: 50%
-  top: 330px
-  margin-left: -90px
+  margin-left: -120px
   z-index: 12
 
   .menu-visible &
@@ -39,7 +43,7 @@
   left: 50%
   margin-left: -153px
   position: absolute
-  top: 0
+  top: -35px
   z-index: 12
 
   .menu-visible &
@@ -88,43 +92,21 @@
     &:before
       content: ""
       background-color: rgba(0,0,0,.8)
-      height: 115px
+      height: 100%
       position: absolute
       bottom: 0
       left: 0
       width: 100%
 
     .info-main
-      bottom: 0
+      top: 310px
       left: 0
       position: absolute
       width: 100%
 
-      .date
-        display: inline-block
-        font-size: 3rem
-        margin-right: 80px
-        position: relative
-        top: -5px
 
       .title
-        display: inline-block
-        position: relative
-
-        &:before,
-        &:after
-          content: ""
-          border-bottom: 4px double #ba272c
-          width: 50px
-          top: 25px
-          height: 2px
-          position: absolute
-
-        &:before
-          left: -65px
-
-        &:after
-          right: -65px
+        font-size: 4.85rem
 
 
   .area-fixed
@@ -138,48 +120,19 @@
 
 
   .btn-send
-    +single-transition(all, .5s)
-    margin: 0
-    position: fixed
-    top: 70px
-    right: 40px
-    left: auto
-    padding: 10px 30px
-
-    .menu-fixed &
-      top: 20px
+    top: 430px
 
   .ico-menu
     display: none
 
   .logo
-    // +single-transition(all, .7s)
-    // height: 90%
-    // left: 50%
-    // margin-left: -25%
-    // position: absolute
-    // pointer-events: none
-    // top: -30px
-    // width: 50%
     +single-transition(all, .7s)
     height: 240px
-    left: 5%
-    margin-left: 0
-    position: fixed
-    width: 175px
-    top: -75px
-
-    z-index: 15
-
-    .menu-fixed &
-      +single-transition(all, .7s)
-      height: 240px
-      left: 5%
-      margin-left: 0
-      position: fixed
-      width: 175px
-      top: -75px
-
+    left: 50%
+    margin-left: -180px
+    width: 360px
+    top: 85px
+    z-index: 11
 
 @media screen and (min-width: 1500px)
 
