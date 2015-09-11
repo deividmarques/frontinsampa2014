@@ -76,7 +76,7 @@
 
 
 
-@media screen and (min-width: 992px)
+@media screen and (min-width: $media-md)
 
   .area-top
     background: url(../images/header-md.jpg) no-repeat 0 bottom #030102
@@ -153,14 +153,22 @@
     display: none
 
   .logo
+    // +single-transition(all, .7s)
+    // height: 90%
+    // left: 50%
+    // margin-left: -25%
+    // position: absolute
+    // pointer-events: none
+    // top: -30px
+    // width: 50%
     +single-transition(all, .7s)
-    height: 90%
-    left: 50%
-    margin-left: -25%
-    position: absolute
-    pointer-events: none
-    top: -30px
-    width: 50%
+    height: 240px
+    left: 5%
+    margin-left: 0
+    position: fixed
+    width: 175px
+    top: -75px
+
     z-index: 15
 
     .menu-fixed &

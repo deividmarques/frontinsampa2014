@@ -47,7 +47,7 @@
     overflow-scrolling: touch
 
 
-@media screen and (min-width: 992px)
+@media screen and (min-width: $media-md)
 
   .area-menu
     +single-transition(all, .5s)
@@ -58,16 +58,13 @@
     position: relative
     width: 100%
     background: none
-    position: absolute
+    position: fixed
     left: 25%
-    top: 60px
+    top: 10px
     z-index: 12
     height: auto
     width: auto
 
-    .menu-fixed &
-      position: fixed
-      top: 10px
 
     li
       display: inline-block
