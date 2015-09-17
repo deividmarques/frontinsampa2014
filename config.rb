@@ -75,6 +75,8 @@ end
 
 
 configure :build do
+
+  set :base_url, "http://frontinsampa.com.br/"
   # For example, change the Compass output style for deployment
   #activate :minify_css
 
