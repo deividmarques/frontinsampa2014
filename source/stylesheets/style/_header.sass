@@ -8,7 +8,7 @@
   text-transform: uppercase
 
   .title
-    font-size: 3.625rem
+    font-size: 3rem
     font-weight: 400
     padding-top: 0
     margin-bottom: 0
@@ -25,11 +25,21 @@
 .btn-send
   +single-transition(all, .25s, ease-in)
   +translate(0, 0)
+  +translateX(-50% )
   position: absolute
-  top: 330px
+  top: 280px
+  font-size: 2.125rem
   left: 50%
-  margin-left: -120px
+  text-align: center
+  width: 80%
   z-index: 10
+
+  span
+    display: block
+
+  .info-price
+    // display: none
+    font-size: 1.25rem
 
   .menu-visible &
     +single-transition(all, .5s)
@@ -139,4 +149,16 @@
 
   .area-menu li a
     font-size: 2.4rem
+
+@media screen and (min-width: $media-md)
+
+  .btn-send
+    width: auto
+
+    span
+      display: inline-block
+
+    .info-price
+      display: block
+      font-size: 1.5rem
 
