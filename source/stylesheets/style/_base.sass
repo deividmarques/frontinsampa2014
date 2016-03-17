@@ -34,12 +34,12 @@ img
   color: #fff
   text-decoration: none
   font-weight: 700
-  font-size: 22px
+  font-size: 28px
   margin: 30px 0 50px
 
   &.btn-send
     +box-shadow(3px 4px #2e9000)
-    background-color: #48b300
+    background-color: $green
     text-transform: uppercase
 
 
@@ -88,7 +88,7 @@ img
 
 
 #area-info,
-#area-description
+#sobre
   background: $red
   color: #fff
   padding: 50px 0
@@ -112,7 +112,7 @@ img
   padding: 80px 0
 
 
-#area-local
+#local
   background: url(../images/bg-sampa-xs.jpg) no-repeat 0 0
   background-size: 100%
   padding: 55px 0
@@ -146,10 +146,14 @@ img
   padding: 8px 15px
   margin: 10px 0
 
+  &:hover,
+  &:focus
+    color: #fff
 
-#area-sponsor
+
+#patrocinadores
   background: #fff
-  padding: 50px 0
+  padding: 100px 0 50px
 
   .title-sponsor
     color: $red
@@ -180,7 +184,12 @@ img
     .sub-title
       margin: 0 0 15px
 
-#area-contact
+  a
+    &:hover,
+    &:focus
+      opacity: .65
+
+#contato
   background: #1e1e1e
   padding: 30px 0
 
@@ -193,6 +202,9 @@ img
     display: inline-block
     margin: 20px 0
 
+    &:hover,
+    &:focus
+      opacity: .65
 
 #area-footer
   background: #2c2c2b
@@ -202,20 +214,59 @@ img
   a
     font-weight: bold
 
+.speakers
+  margin: 0 auto
+  width: 100%
+
+  li
+    margin: 20px 0
+    display: inline-block
+    vertical-align: top
+    width: 100%
+
+  img
+    width: 120px
+    height: 120px
+    border-radius: 50%
+    border: 5px solid $red
+
+  figcaption
+    font-size: 24px
+    margin: 0 20px
+
+    small
+      font-size: 18px
+  a
+    display: inline-block
+
+    &:hover,
+    &:focus
+      opacity: .65
+
+
+
+.braziljs-logo
+  height: 70px
+
 @media screen and (min-width: 401px)
 
   .hide-mobile
     display: block
 
-  #area-local
+  #local
     background: url(../images/bg-sampa-md.jpg) no-repeat 0 0
 
     p
       font-size: 2.5rem
 
+      small
+        font-weight: 300
 
 @media screen and (min-width: 768px)
 
+  .speakers li
+    margin: 20px
+    width: 300px
 
   .btn-dark
     font-size: 3.1rem
@@ -226,17 +277,14 @@ img
     padding: 10px 80px
     font-size: 2rem
 
-
-
-
 @media screen and (min-width: $media-md)
 
-  #area-local
+  #local
     background: url(../images/bg-sampa-lg.jpg) no-repeat 0 0
 
 
   #area-info,
-  #area-description
+  #sobre
 
     .title-info span
       display: inline-block
@@ -245,5 +293,6 @@ img
   .title
     padding-top: 40px
 
-  #area-sponsor .title-sponsor
+  #patrocinadores .title-sponsor
     padding-top: 50px
+
